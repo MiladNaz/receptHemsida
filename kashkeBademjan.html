@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kashke Bademjan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<nav>
+    <img src="img/Logga.png" alt="Logga" class="logga">
+    <ul class="links">
+        <a href="index.html" class="menuText">Home</a>
+        <a href="#news" class="menuText">News</a>
+        <a href="#contact" class="menuText">Contact</a>
+    </ul>
+    <button onclick="document.getElementById('login').style.display='block'"><img src="img/login.png" alt="Login icon" class="user">
+    </button>
+</nav>
+
+<div id="login" class="modal">
+    <form method="post" id="login-button">
+        <div class="login-item">
+            <label for="usernameLogin"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" id="usernameLogin" name="uname" required>
+            <div id="feedbackLogin"></div>
+
+            <label for="passwordLogin"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="passwordLogin" name="psw" required>
+            <div id="wrongUsernameOrPassword"></div>
+            <button type="submit">Login</button>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+
+            <p>Not registered?</p>
+            <p><span><a
+                    onclick="document.getElementById('signUp').style.display='block',document.getElementById('login').style.display='none'"
+                    style="text-decoration: none">Sign up now.</a></span>
+            </p>
+
+            <button type="button" onclick="document.getElementById('login').style.display='none'">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<div id="signUp" class="modal">
+    <form method="post">
+        <div class="login-item">
+            <label for="usernameSignUp">Username: </label>
+            <input type="text" placeholder="Enter username" id="usernameSignUp">
+            <div id="feedbackSignUp"></div>
+
+            <label for="email">Email: </label>
+            <input type="email" required="required" placeholder="Enter email" id="email">
+            <div id="feedbackEmail"></div>
+
+            <label for="passwordSignUp">Password: </label>
+            <input type="password" placeholder="Enter password" id="passwordSignUp">
+
+            <label for="repeat-password">Repeat password: </label>
+            <input type="password" placeholder="Repeat password" id="repeat-password">
+            <div id="feedbackRepeatPassword"></div>
+            <button type="submit" id="sign-up">Sign up</button>
+            <button type="button" onclick="document.getElementById('signUp').style.display='none'">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<div class="sidenav">
+    <a href="beefDishes.html" style="text-decoration: none">Beef dishes</a>
+    <a href="chickenDishes.html" style="text-decoration: none">Chicken dishes</a>
+    <a href="fishDishes.html" style="text-decoration: none">Fish dishes</a>
+    <a href="riceDishes.html" style="text-decoration: none">Rice dishes</a>
+    <a href="lambDishes.html" style="text-decoration: none">Lamb dishes</a>
+    <a href="vegetarianDishes.html" style="text-decoration: none" class="inside-submenu">Vegetarian dishes</a>
+</div>
+
+<div class="grid-container">
+
+    <article class="recipe-item">
+        <img src="img/KashkeBademjon.jpg" alt="Image of dish">
+    </article>
+
+    <article class="recipe-item">
+        <h3>Kashke Bademjan</h3>
+        <h3>Ingredienser</h3>
+        <ul>
+            <li>2st Auberginer</li>
+            <li>Ett gäng Valnötter</li>
+            <li>Å lite andra ingredienser</li>
+        </ul>
+    </article>
+
+    <article class="recipe-instruction-item">
+        <p>Blanda ingredienserna till en röra så blir det gott.</p>
+    </article>
+
+</div>
+
+<footer>
+    <a href="#facebook"><img src="img/facebook.png" alt="Facebook logo"></a>
+    <a href="#youtube"><img src="img/youtube.png" alt="YouTube logo"></a>
+    <a href="#instagram"><img src="img/instagram.png" alt="Instagram logo"></a>
+    <p class="copyright">Milles © 2021</p>
+</footer>
+
+<script src="js/user.js"></script>
+
+</body>
+</html>

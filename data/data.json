@@ -1,0 +1,31 @@
+{
+  "recipes": [
+    {
+      "link": "<a href=\"adasPolo.html\" style=\"text-decoration: none\">",
+      "article": "<article class=\"sub-menu-item\">",
+      "img": "<img src=\"img/adaspolo.jpg\" alt=\"Lubia polo\">",
+      "fade": "<fade/>",
+      "stars": "<span class=\"fa fa-star checked\"></span>\n<span class=\"fa fa-star checked\"></span>\n<span class=\"fa fa-star checked\"></span>\n<span class=\"fa fa-star\"></span>\n<span class=\"fa fa-star\"></span>",
+      "name": "<h1>Adas Polo</h1>\n<h3>(Ris med gröna linser)</h3>",
+      "closing": "</article>\n</a>"
+    },
+    {
+      "link": "<a href=\"lubiaPolo.html\" style=\"text-decoration: none\">",
+      "article": "<article class=\"sub-menu-item\">",
+      "img": "<img src=\"img/LubiaPolo.jpg\" alt=\"Lubia polo\">",
+      "fade": "<fade/>",
+      "stars": "<span class=\"fa fa-star checked\"></span>\n<span class=\"fa fa-star checked\"></span>\n<span class=\"fa fa-star checked\"></span>\n<span class=\"fa fa-star\"></span>\n<span class=\"fa fa-star\"></span>",
+      "name": "<h1>Lubia Polo</h1>\n<h3>(Ris med gröna bönor)</h3>",
+      "closing": "</article>\n</a>"
+    },
+    {
+      "link": "<a href=\"baghaliPolo.html\" style=\"text-decoration: none\">",
+      "article": "<article class=\"sub-menu-item\">",
+      "img": "<img src=\"img/baghaliPolo.jpg\" alt=\"Lubia polo\">",
+      "fade": "<fade/>",
+      "stars": "<span class=\"fa fa-star checked\"></span>\n<span class=\"fa fa-star checked\"></span>\n<span class=\"fa fa-star checked\"></span>\n<span class=\"fa fa-star\"></span>\n<span class=\"fa fa-star\"></span>",
+      "name": "<h1>Baghali Polo</h1>\n<h3>(Ris med bonde bönor och dill)</h3>",
+      "closing": "</article>\n</a>"
+    }
+  ]
+}

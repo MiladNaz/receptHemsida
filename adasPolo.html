@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adas Polo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<nav>
+    <img src="img/Logga.png" alt="Logga" class="logga">
+    <ul class="links">
+        <a href="index.html" class="menuText">Home</a>
+        <a href="#news" class="menuText">News</a>
+        <a href="#contact" class="menuText">Contact</a>
+    </ul>
+    <button onclick="document.getElementById('login').style.display='block'"><img src="img/login.png" alt="Login icon" class="user">
+    </button>
+</nav>
+
+<div id="login" class="modal">
+    <form method="post" id="login-button">
+        <div class="login-item">
+            <label for="usernameLogin"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" id="usernameLogin" name="uname" required>
+            <div id="feedbackLogin"></div>
+
+            <label for="passwordLogin"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="passwordLogin" name="psw" required>
+            <div id="wrongUsernameOrPassword"></div>
+            <button type="submit">Login</button>
+
+            <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+
+            <p>Not registered?</p>
+            <p><span><a
+                    onclick="document.getElementById('signUp').style.display='block',document.getElementById('login').style.display='none'"
+                    style="text-decoration: none">Sign up now.</a></span>
+            </p>
+
+            <button type="button" onclick="document.getElementById('login').style.display='none'">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<div id="signUp" class="modal">
+    <form method="post">
+        <div class="login-item">
+            <label for="usernameSignUp">Username: </label>
+            <input type="text" placeholder="Enter username" id="usernameSignUp">
+            <div id="feedbackSignUp"></div>
+
+            <label for="email">Email: </label>
+            <input type="email" required="required" placeholder="Enter email" id="email">
+            <div id="feedbackEmail"></div>
+
+            <label for="passwordSignUp">Password: </label>
+            <input type="password" placeholder="Enter password" id="passwordSignUp">
+
+            <label for="repeat-password">Repeat password: </label>
+            <input type="password" placeholder="Repeat password" id="repeat-password">
+            <div id="feedbackRepeatPassword"></div>
+            <button type="submit" id="sign-up">Sign up</button>
+            <button type="button" onclick="document.getElementById('signUp').style.display='none'">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<div class="sidenav">
+    <a href="beefDishes.html" style="text-decoration: none">Beef dishes</a>
+    <a href="chickenDishes.html" style="text-decoration: none">Chicken dishes</a>
+    <a href="fishDishes.html" style="text-decoration: none">Fish dishes</a>
+    <a href="riceDishes.html" style="text-decoration: none" class="inside-submenu">Rice dishes</a>
+    <a href="lambDishes.html" style="text-decoration: none">Lamb dishes</a>
+    <a href="vegetarianDishes.html" style="text-decoration: none">Vegetarian dishes</a>
+</div>
+
+<div class="grid-container">
+
+    <article class="recipe-item">
+        <img src="img/adaspolo.jpg" alt="Image of dish">
+    </article>
+
+    <article class="recipe-item">
+        <h3>Adas Polo</h3>
+        <div class="rate-container">
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5"/>
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4"/>
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3"/>
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2"/>
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1"/>
+                <label for="star1" title="text">1 star</label>
+                <h1></h1>
+            </div>
+        </div>
+        <button onclick="loginBeforeRate()" id="rateBtn">Rate</button>
+        <div id="loginBeforeYouRate"></div>
+        <h4>Ingredienser</h4>
+        <ul>
+            <li>2 glas ris (basmati)</li>
+            <li>1/5 glas gröna linser</li>
+            <li>300g russin</li>
+            <li>1 hel gul lök</li>
+            <li>50g smör</li>
+            <li>1 tsk kanel</li>
+            <li>1/2 krm saffran</li>
+            <li>salt (mängd efter smak)</li>
+        </ul>
+
+    </article>
+
+    <article class="recipe-instruction-item">
+        <p>
+            Skölj riset noggrant så du blir av med all smuts och stärkelse (om du missar det här steget kommer ditt ris
+            att klibbas ihop).
+            För varje glas ris behövs 2 glas vatten, häll in ris, vatten och smör i en kastrull.
+            Häll linserna i en kastrull, fyll upp med vatten så allt är täckt, koka sedan i 15 min.
+            blablalblablblablalblablalblalblablalblablalblalbalb lbalblalblabl alblablalblablalbalb.
+        </p>
+    </article>
+</div>
+
+<footer>
+    <a href="#facebook"><img src="img/facebook.png" alt="Facebook logo"></a>
+    <a href="#youtube"><img src="img/youtube.png" alt="YouTube logo"></a>
+    <a href="#instagram"><img src="img/instagram.png" alt="Instagram logo"></a>
+    <p class="copyright">Milles © 2021</p>
+</footer>
+
+<script src="js/user.js"></script>
+
+</body>
+</html>
